@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block layout %}
+    <header>
+        <a href="/">
+            <img class="logo" src="{% static "img/logo.png" %}"/>
+        </a> 
+        <nav>
+            <ul>
+                <li><a href="/about">About Us</a>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>  
+    </header>
+    {% block main %}
+    {% endblock %}
+    <footer>
+        <p>
+            &#169;  SEO London.
+        </p>
+    </footer>
+
+
+{% endblock %}
+

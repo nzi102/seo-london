@@ -1,0 +1,13 @@
+@import "base/normalize";
+@import "base/variables";
+@import "base/colours";
+@import "base/typography";
+
+@import "component/footer";
+@import "component/header";
+
+
+body {
+	background: #f8f8f8;
+}
+

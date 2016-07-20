@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% load static %}
+
+
+{% block main %} 
+    <section>
+        <h1>Log In</h1>
+        <form method="POST" action="">
+        	{% csrf_token %}
+        	{{ form }}
+			<input type="submit" value="Log in" />
+			<input type="hidden" name="next" value="{{ next }}" />
+			<a href="#">Forgot Password</a>
+        </form>
+    </section>
+
+{% endblock %}
